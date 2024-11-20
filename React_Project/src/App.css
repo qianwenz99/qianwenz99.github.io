@@ -1,0 +1,81 @@
+:root {
+  --text-color: #ffffff; /* Default text color */
+  --hover-text-color: #282c34; /* Text color on hover (background color) */
+  --background-color: #282c34; /* Navigation bar background color */
+  --bubble-color: #ffffff; /* Bubble color on hover */
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 100px;
+  background-color: var(--background-color);
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: font-family 0.5s, font-size 0.5s;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .right a:hover {
+  color: var(--hover-text-color); /* Text becomes background color */
+  border-color: var(--bubble-color); /* Bubble becomes visible */
+  background-color: var(--bubble-color); /* Bubble color */
+  transform: scale(1.1); /* Slightly enlarge the bubble */
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  nav {
+    padding: 0 30px;
+  }
+
+  nav .left a {
+    font-size: 40px;
+  }
+
+  nav .right a {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav .left a {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  nav .right a {
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 8px 12px;
+  }
+}

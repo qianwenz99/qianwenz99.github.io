@@ -1,0 +1,55 @@
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fffacd; /* Light yellow for unrevealed cells */
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Darker yellow on hover for unrevealed cells */
+.cell:hover {
+    background-color: #ffeb85; /* Darker yellow */
+}
+
+.cell.revealed {
+    background-color: #e6e6e6; /* Light grey for revealed cells */
+    cursor: default; /* Disable hover and pointer for revealed cells, as this makes the grid confusing otherwise. */
+}
+
+.cell.revealed:hover {
+    background-color: #e6e6e6; /* Maintain grey even on hover */
+}
+
+/* Red background for revealed mines */
+.cell.revealed.mine {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.cell.revealed:not(.mine) {
+    color: black;
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    .cell {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .cell {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+}
+
+

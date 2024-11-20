@@ -1,0 +1,19 @@
+.rules-content {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Londrina Sketch', sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+

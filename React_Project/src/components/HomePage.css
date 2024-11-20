@@ -1,0 +1,22 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Londrina Sketch', sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
